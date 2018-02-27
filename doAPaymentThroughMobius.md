@@ -77,7 +77,7 @@ var mixerContractAddress = "0x23008ebc7221de718178abf454b8d5fc0a4dbeb3";
 var MyMixerInstance = mixerContract.at(mixerContractAddress);
 
 var mixerDepositEvent = MyMixerInstance.MixerDeposit();
-mixerReadyEvent.watch(function(error, result){
+mixerDepositEvent.watch(function(error, result){
     console.log("Deposit");
 });
 
