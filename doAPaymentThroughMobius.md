@@ -45,7 +45,7 @@ The first account (created by ./entrypoint) should have a lot of ethers (Because
 9. Retrieve the message sent by the ring when the event MixerReady is triggered. In order to do this, we need to define a callback (see: https://coursetro.com/posts/code/100/Solidity-Events-Tutorial---Using-Web3.js-to-Listen-for-Smart-Contract-Events)
 ```javascript
 var mixerDepositEvent = MyMixerInstance.MixerDeposit();
-mixerReadyEvent.watch(function(error, result){
+mixerDepositEvent.watch(function(error, result){
     // Content of the function
 });
 
